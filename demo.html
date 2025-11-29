@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMART MED – Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <button class="profile-btn" id="profile-btn" aria-label="Profile">U</button>
+      <a class="brand" href="index.html">
+        <div class="brand-badge">SM</div>
+        SMART MED
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="emergency.html">Emergency</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn btn-outline" href="demo.html">Try Demo</a>
+        <a class="btn btn-primary" href="get-started.html">Get Started</a>
+      </div>
+      <button class="settings-btn" id="settings-btn" aria-label="Settings">⚙</button>
+      <button class="nav-toggle"><span></span></button>
+    </div>
+    <div id="profile-menu" class="profile-menu" data-aos="fade-down">
+      <h4 id="profile-label">Not logged in</h4>
+      <div class="profile-row"><button class="btn" id="logout-btn" type="button">Logout</button></div>
+    </div>
+    <div id="settings-menu" class="settings-menu" data-aos="fade-down">
+      <div class="field">
+        <label class="label" for="font-input">Change Font Size</label>
+        <input class="input" id="font-input" type="text" value="100%">
+      </div>
+      <div class="font-actions">
+        <button class="btn" id="font-minus" type="button">-</button>
+        <button class="btn" id="font-plus" type="button">+</button>
+      </div>
+      <div class="field" style="margin-top:10px">
+        <button class="btn" id="theme-light" type="button">Light Mode</button>
+        <button class="btn" id="theme-dark" type="button">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section container" data-aos="fade-up">
+      <h1 class="section-title">Demo</h1>
+      <p class="section-sub">Quickly add a medicine and a single dose time to preview the alarm experience.</p>
+      <div class="demo">
+        <div class="form">
+          <h3>Demo Alarm</h3>
+          <div class="field">
+            <label class="label" for="d-med">Medicine Name</label>
+            <input class="input" id="d-med" placeholder="e.g., Paracetamol">
+          </div>
+          <div class="field">
+            <label class="label" for="d-dose">Dosage</label>
+            <input class="input" id="d-dose" placeholder="e.g., 500 mg">
+          </div>
+          <div class="field">
+            <label class="label" for="d-time">Dose Time</label>
+            <input class="input" id="d-time" type="time">
+          </div>
+          <div class="field">
+            <button class="btn btn-primary" id="d-add" type="button">Add Alarm</button>
+            <button class="btn" id="d-test" type="button">Play Test Alarm</button>
+            <button class="btn" id="d-clear" type="button">Clear Demo Alarms</button>
+          </div>
+        </div>
+        <div class="schedule">
+          <div class="collapse-header" id="d-alarms-toggle">
+            <h3>Demo Alarms</h3>
+            <button type="button" class="chevron-btn" aria-expanded="false">▸</button>
+          </div>
+          <div id="d-alarms" class="schedule-list hide"></div>
+          <div id="d-banner" class="alarm-banner hide"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="kicker">© SMART MED</div>
+      <div class="social">
+        <a href="https://twitter.com" aria-label="Twitter"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21 7.5c-.6.3-1.3.5-2 .6.7-.4 1.2-1.1 1.4-1.9-.7.4-1.4.7-2.2.8A3.4 3.4 0 0 0 12 9.6c0 .3 0 .6.1.8-2.9-.1-5.5-1.6-7.2-3.9-.3.6-.5 1.3-.5 2 0 1.4.7 2.6 1.8 3.3-.6 0-1.2-.2-1.7-.5 0 2 1.4 3.7 3.2 4.1-.3.1-.7.1-1 .1-.2 0-.5 0-.7-.1.5 1.6 2 2.8 3.7 2.8A6.9 6.9 0 0 1 3 18.5a9.7 9.7 0 0 0 5.3 1.6c6.3 0 9.8-5.2 9.8-9.8v-.4c.7-.5 1.2-1.1 1.9-1.8z"/></svg></a>
+        <a href="https://linkedin.com" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.01 2.5 2.5 0 0 0 0-5.01zM3.5 8.98h2.96v11.54H3.5zM9.02 8.98h2.84v1.58h.04c.4-.76 1.38-1.56 2.84-1.56 3.03 0 3.59 1.99 3.59 4.58v6.94h-2.96v-6.15c0-1.47-.03-3.36-2.05-3.36-2.05 0-2.36 1.6-2.36 3.25v6.26H9.02z"/></svg></a>
+        <a href="https://github.com" aria-label="GitHub"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.6-4.1-1.6-.6-1.4-1.3-1.8-1.3-1.8-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.7-.8 2.1-1.3-.9-.1-1.7-.4-2.4-.9 0 0 .8-
+ .1 1.5-.1 1.6 0 2.9.9 3.3 1.4v-1.8c-2.8-.3-5.7-1.4-5.7-6.2 0-1.4.5-2.6 1.2-3.5-.1-.3-.5-1.8.1-3.7 0 0 1-.3 3.6 1.4 1-.3 2-.5 3.1-.5s2.1.2 3.1.5c2.6-1.7 3.6-1.4 3.6-1.4.6 1.9.2 3.4.1 3.7.8.9 1.2 2.1 1.2 3.5 0 4.8-2.9 6-5.7 6.2v2c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+  (function(){
+    var list=document.getElementById('d-alarms');
+    var toggle=document.getElementById('d-alarms-toggle');
+    var btn=toggle?toggle.querySelector('.chevron-btn'):null; var open=false;
+    function setOpen(o){ open=o; if(list) list.classList.toggle('hide', !open); if(btn){ btn.classList.toggle('open', o); btn.setAttribute('aria-expanded', String(o)); } }
+    if(toggle && btn){ toggle.addEventListener('click', function(){ setOpen(!open); }); }
+    var alarms=[]; var timeouts=[]; var banner=document.getElementById('d-banner');
+    function playBeep(){ try{ var ctx=new (window.AudioContext||window.webkitAudioContext)(); var o=ctx.createOscillator(); var g=ctx.createGain(); o.frequency.value=880; o.type='sine'; o.connect(g); g.connect(ctx.destination); o.start(); setTimeout(function(){ g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime+0.5); o.stop(); }, 800); }catch(e){ alert('Alarm!'); } }
+    function render(){ if(!list) return; list.innerHTML=alarms.map(function(a,i){ return '<div class="schedule-item"><div><div class="pill">'+a.time+'</div><div>'+a.name+' • '+a.dose+'</div></div><div><button class="btn" data-i="'+i+'">Remove</button></div></div>'; }).join(''); Array.prototype.forEach.call(list.querySelectorAll('button[data-i]'), function(b){ b.addEventListener('click', function(){ var i=parseInt(b.getAttribute('data-i')); alarms.splice(i,1); render(); }); }); }
+    function scheduleAt(hm, payload){ var parts=hm.split(':'); if(parts.length<2) return; var h=parseInt(parts[0]); var m=parseInt(parts[1]); var now=new Date(); var target=new Date(now.getFullYear(), now.getMonth(), now.getDate(), h, m, 0, 0); if(target<=now) target=new Date(target.getTime()+24*3600*1000); var ms=target.getTime()-now.getTime(); var t=setTimeout(function(){ banner.classList.remove('hide'); banner.textContent='Alarm: '+payload.name+' • '+payload.dose+' • '+hm; playBeep(); setTimeout(function(){ banner.classList.add('hide'); }, 6000); }, ms); timeouts.push(t); }
+    var add=document.getElementById('d-add'); var test=document.getElementById('d-test'); var clear=document.getElementById('d-clear');
+    if(add){ add.addEventListener('click', function(){ var name=document.getElementById('d-med').value.trim(); var dose=document.getElementById('d-dose').value.trim(); var time=document.getElementById('d-time').value.trim(); if(!name || !time){ alert('Enter medicine and dose time'); return; } alarms.push({ name:name, dose:dose||'', time:time }); render(); scheduleAt(time, { name:name, dose:dose||'' }); setOpen(true); }); }
+    if(test){ test.addEventListener('click', function(){ banner.classList.remove('hide'); banner.textContent='Test Alarm'; playBeep(); setTimeout(function(){ banner.classList.add('hide'); }, 3000); }); }
+    if(clear){ clear.addEventListener('click', function(){ alarms=[]; render(); timeouts.forEach(function(t){ try{ clearTimeout(t); }catch(e){} }); timeouts=[]; }); }
+  })();
+  </script>
+  </body>
+</html>
